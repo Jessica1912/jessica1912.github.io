@@ -1,0 +1,253 @@
+body {
+	padding: 0;
+	margin:0;
+	width: 100vw;
+	height: 100vh;	
+}
+
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.body_container {
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	height: 90vh;
+}
+
+.quiz-question-container {
+  width: 800px;
+  max-width: 80%;
+  background-color: #FFDD3C;
+  border-radius: 5px;
+  padding: 10px;
+ 
+  
+}
+.score-questionnum-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 80%;
+	height: 30%;
+	font-size: 23px;
+
+}
+#answers-container {
+	margin:5px 0;
+	display:grid;
+	grid-template-rows: 50% 50%;
+	grid-template-columns: 50% 50%;
+	gap:5px;
+}
+.answer-button{
+  background-color: #A17BB9;
+  height: 50px;
+  border-radius: 5px;
+  text-align: center;	
+}
+
+.next-button {
+	margin-left:90%;
+	background-color: #A17BB9;
+	height: 30px;
+	width: 60px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.start-btn {
+	position: absolute;
+	top: 70%;
+	left: 30%;
+	transform: translate(-50%,-50%);
+	display: flex;
+}
+
+.start-btn button {
+	font-size: 25px;
+	font-weight: 500;
+	background-color: #FFDD3C;
+	color: black;
+	height: 50px;
+	border-radius: 5px;
+	text-align: center;
+	padding: 15 px 30px;
+}
+
+.info-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 700px;
+	height: 400px;
+	background-color: #A17BB9;
+	border-radius: 5px;
+	box-shadow: 0 0 19px 2px;
+	padding: 15px 30 px;
+	text-align: center;
+}
+
+.info-title {
+	font-size: 45px;
+	font-weight: 200;
+}
+
+.info-intro {
+	font-size: 19px;
+	font-weight:100;
+	padding: 20px 30px;
+}
+
+.level {
+	display: grid;
+	grid-template-rows:	repeat(3, 1fr);
+	max-width: 400px;
+	gap: 7px;
+}
+
+.level-select {
+	padding: 40px 100px;
+	cursor:  pointer;
+	text-align: center;
+	font-size: 50px;
+	border-radius: 5px;
+	border: 10px;
+	background: #8878C3;
+	transition: background 0.1s;
+}
+
+.level-select:hover{
+	cursor: pointer !important;
+}
+
+.level-select-selected {
+	background: #FFFF66;
+	color: F0E68C;
+}
+	
+	
+.invisible{
+	display:none
+}
+	
+.level-locked{
+	background-color: red;
+	text-decoration: line-through;
+}
+.prompt-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	height: 500px;
+	background-color: #A17BB9;
+	border-radius: 5px;
+	box-shadow: 0 0 19px 2px;
+	text-align: center;
+
+}
+.game-start {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 200px;
+	height: 100px;
+	text-align: center;
+	margin:auto;
+}
+#play-btn {
+	display: flex;
+	justify-content: center;
+	padding: 30px 20px;
+	cursor:  pointer;
+	font-size: 40px;
+	border-radius: 5px;
+	background: #FFDD3C;
+	transition: background 0.1s;
+}
+#span {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px 50px;
+    padding: 5px 10px;
+	font-size: 40px;
+	font-weight:300;
+}
+
+.results-box-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	flex-direction: column;
+	width: 800px;
+	max-width: 80%;
+	background-color: #FFDD3C;
+	border-radius: 5px;
+	padding: 10px;
+	display: none;
+	visibility: visible;
+}
+.completion-text {
+	margin-top: 20px 80px;
+	margin-left: 30px;
+	margin-right: 20px;
+	margin-bottom: 70px;
+    padding: 5px 10px;
+	font-size: 30px;
+	font-weight:300;
+}
+
+.score-text {
+	margin-top: 10px 20px;
+	margin-left: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+    padding: 5px 10px;
+	font-size: 20px;
+	font-weight:200;
+
+}
+.buttons {
+	margin:5px 0;
+	display:grid;
+	grid-template-rows: 50% 50%;
+	grid-template-columns: 50% 50%;
+	gap:5px;
+}
+#restart-btn {
+	font-size: 25px;
+	font-weight: 500;
+	background-color: #A17BB9;
+	color: black;
+	height: 70px;
+	width: 120px;
+	border-radius: 5px;
+	text-align: center;
+	padding: 15 px 30px;
+}
+
+#end-btn {
+	font-size: 25px;
+	font-weight: 500;
+	background-color: #A17BB9;
+	color: black;
+	height: 70px;
+	width: 120px;
+	border-radius: 5px;
+	text-align: center;
+	padding: 15 px 30px;
+}

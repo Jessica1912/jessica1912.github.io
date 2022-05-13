@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quiz</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="quiz.css">
+		<script src="quiz.js" defer></script>
+		
+	</head>
+	<body style = "background-image: url(purplewallpaper.png);">
+	
+		<!-- DOM Manipulating page -->
+		<div class="body_container">
+			<!-- Start Quiz/Landing page -->
+			<div class = "info-box" id="start-box">
+				<div class = "start-btn"><button id = "start-quiz">Start Quiz</button></div>
+				<img src = "purplefb.jpg"  width = "300" height = "400" align="right">
+				<div class = "info-title">
+					<span> British Literature Quiz</span>
+				</div>
+				<div class = "info-intro">
+						<span>Discover how much you know about British Literature. Are you ready to start the quiz?</span>
+				</div>
+			</div>
+			
+		<!-- Questions Container -->
+		<div class=" invisible quiz-question-container" id="quiz-container">
+			<div class= "score-questionnum-container">
+				<h5>Score : <span id="player-score"></span>  / 15</h5>
+                <h5> Question : <span id="question-number"></span> / 15</h5>
+			</div>
+			<div id="display-question"></div>
+			<div id="answers-container"></div>
+			<button class="next-button button" id="next-button">Next</button>
+		</div>
+		
+		<!-- Level Page -->
+		<div class= "level invisible" id = "level">
+			<div class="level-select" id = "levelOne" data-level ="1">Level 1</div>
+			<div class="level-select level-locked" id = "levelTwo" data-level ="2">Level 2</div>
+			<div class="level-select level-locked" id = "levelThree" data-level="3">Level 3</div>
+			<!-- Starting Quiz Prompt -->
+			<div class="prompt-box" id = "start-prompt">
+				<span id ="span">Are you ready? You have 20 seconds to answer each question!</span>
+				<button class="game-start" id = "play-btn">Play</button>
+			</div>
+		</div>
+		</div>
+		<!-- Results Box -->
+		<div class="invisible results-box-container" id ="results-box">
+			<div class="winner-logo">
+				<img src = "crown.png"  width = "120" height = "100" align="top">
+			</div>
+			<div class="completion-text">You've completed the Quiz!</div>
+			<div class="score-text">
+				Your score is 
+			</div>
+			<div class="buttons">
+				<button class="restart" id ="restart-btn">Replay Quiz</button>
+				<button class="end" id ="end-btn">End Quiz</button>
+			</div>
+		</div>
+	</body>
+</html>
